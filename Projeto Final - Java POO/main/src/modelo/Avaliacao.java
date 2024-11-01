@@ -1,16 +1,16 @@
 package modelo;
 
 public class Avaliacao {
-    private int estrelas;
+    private int nota;
     private String comentario;
 
-    public Avaliacao(int estrelas, String comentario) {
-        this.estrelas = estrelas;
+    public Avaliacao(int nota, String comentario) {
+        this.nota = nota;
         this.comentario = comentario;
     }
 
-    public int getEstrelas() {
-        return estrelas;
+    public int getNota() {
+        return nota;
     }
 
     public String getComentario() {

@@ -1,15 +1,19 @@
 package modelo;
 
-public abstract class Localizacao {
-    protected String cidade;
-    protected String estado;
-    protected String pais;
+public class Localizacao {
+    private String cidade;
+    private ZonaCidade zonaCidade;
 
-    public Localizacao(String cidade, String estado, String pais) {
+    public Localizacao(String cidade, ZonaCidade zonaCidade) {
         this.cidade = cidade;
-        this.estado = estado;
-        this.pais = pais;
+        this.zonaCidade = zonaCidade;
     }
 
-    public abstract void exibirDetalhes();
+    public String getCidade() {
+        return cidade;
+    }
+
+    public ZonaCidade getZonaCidade() {
+        return zonaCidade;
+    }
 }
